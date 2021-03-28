@@ -1,6 +1,7 @@
 {
   "name": "alisatm",
   "version": "0.1.0",
+  "homepage": "http://daniil-lab.github.io/alisaTmFront",
   "private": true,
   "dependencies": {
     "@types/enzyme": "3.10.4",
@@ -41,7 +42,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "fix": "eslint src --ext .js,.jsx,.ts,.tsx  --fix",
-    "prettier": "prettier --write ./"
+    "prettier": "prettier --write ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
